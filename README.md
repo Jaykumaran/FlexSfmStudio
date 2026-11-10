@@ -7,6 +7,8 @@ finds and repairs doubled passes. Every step runs sanity checks and saves figure
 
 Video or images in, Gaussian-splat-ready data out. You run it one step at a time and can see what each step did.
 
+<p align="center"><a href="https://youtu.be/HGR-YEj_pDE"><img src="https://img.shields.io/badge/Watch%20the%20demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the demo on YouTube"></a></p>
+
 <p align="center"><img src="docs/img/demo.gif" alt="FlexSfM Studio on 77 public-domain drone photos: keypoints, matching, camera poses solved and aligned to GPS, bundle adjustment converging, dense matching, refinement, then the RGB point cloud with every camera, looking through a camera, and the GPS map" width="100%"></p>
 <p align="center"><sub>The whole run on the public-domain <a href="#try-it-with-the-demo-data">aukerman</a> photos (SIFT + ALIKED keypoints, dense step at 24,000 keypoints per image: 367,000 points). Every view is a live panel of the app.</sub></p>
 
