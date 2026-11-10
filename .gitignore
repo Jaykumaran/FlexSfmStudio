@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+*.log
+# never commit data or projects
+*.MP4
+*.mp4
+*.MOV
+*.SRT
+*.ply
+*.db
+
+# demo dataset (download with scripts/get_demo_data.sh)
+demo_data/

@@ -1,0 +1,9 @@
+FlexSfM Studio
+Copyright 2026 The FlexSfM Studio contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This software uses, but does not include or redistribute, the third-party
+components listed in THIRD_PARTY.md. Each is governed by its own licence.
+In particular, FlexGlue downloads DINOv3-based model weights at run time;
+those weights are subject to Meta's DINOv3 License, not to this project's licence.

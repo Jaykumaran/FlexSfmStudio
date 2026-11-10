@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flexsfm-studio"
+version = "0.1.0"
+description = "Step-by-step structure-from-motion workbench for drone video and photos: FlexGlue matching, COLMAP/GLOMAP reconstruction, GPS/marker georeferencing, doubled-pass repair and Gaussian-splat-ready export, with checks and figures for every step."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+keywords = ["structure-from-motion", "sfm", "photogrammetry", "gaussian-splatting", "3dgs", "colmap", "glomap",
+            "flexglue", "drone", "uav", "dji", "georeferencing", "gps", "metashape-alternative"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Intended Audience :: Science/Research",
+]
+dependencies = [
+  "numpy", "scipy", "matplotlib", "opencv-python", "pillow", "pyyaml",
+  "torch>=2.0", "torchvision", "pycolmap>=4.0", "imageio-ffmpeg",
+  "flexglue @ git+https://github.com/cvg/FlexGlue.git",
+  "lightglue @ git+https://github.com/cvg/LightGlue.git",
+]
+
+[project.optional-dependencies]
+gui = ["PySide6>=6.6", "pyqtgraph>=0.13", "PyOpenGL"]
+
+[project.scripts]
+flexsfm = "flexsfm.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["flexsfm*"]
