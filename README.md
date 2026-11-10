@@ -1,13 +1,13 @@
 # FlexSfM Studio
 
+[![Watch the demo on YouTube](https://img.shields.io/badge/Watch%20the%20demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/HGR-YEj_pDE)
+
 **Structure-from-motion workbench for video and photos.** It produces camera poses and point clouds ready for
 Gaussian splatting (3DGS), NeRF or photogrammetry. Footage can come from a phone, a handheld camera, a drone or a
 vehicle. It uses FlexGlue matching and COLMAP/GLOMAP reconstruction, can georeference with GPS or ground markers, and
 finds and repairs doubled passes. Every step runs sanity checks and saves figures you can inspect.
 
 Video or images in, Gaussian-splat-ready data out. You run it one step at a time and can see what each step did.
-
-<p align="center"><a href="https://youtu.be/HGR-YEj_pDE"><img src="https://img.shields.io/badge/Watch%20the%20demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the demo on YouTube"></a></p>
 
 <p align="center"><img src="docs/img/demo.gif" alt="FlexSfM Studio on 77 public-domain drone photos: keypoints, matching, camera poses solved and aligned to GPS, bundle adjustment converging, dense matching, refinement, then the RGB point cloud with every camera, the cameras stepping along the trajectory, the GPS map and the pipeline" width="100%"></p>
 <p align="center"><sub>The whole run on the public-domain <a href="#try-it-with-the-demo-data">aukerman</a> photos (SIFT + ALIKED keypoints, dense step at 24,000 keypoints per image: 367,000 points). Every view is a live panel of the app.</sub></p>
